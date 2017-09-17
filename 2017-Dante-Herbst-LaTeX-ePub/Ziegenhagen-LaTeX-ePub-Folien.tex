@@ -1,5 +1,3 @@
-%!TEX TS-program = Arara
-% arara: pdflatex
 \documentclass[12pt,ngerman]{beamer}
 
 \usepackage[utf8]{inputenc}
@@ -28,32 +26,58 @@
 
 \end{frame}
 
-\section{Was ist eigentlich \enquote{ePub}?}
+\section{Was ist eigentlich \enquote{EPUB}?}
 
 \begin{frame}
-\frametitle{Was ist eigentlich \enquote{ePub}?}
-\framesubtitle{~}
+\frametitle{Was ist eigentlich \enquote{EPUB}?}
+\framesubtitle{Einführung}
 
-Verschiedene eBook-Formate gebräuchlich
+EPUB
 
 \begin{itemize}
-\item PDF
-\item Kindle
-\item ePub
-\item 
-\item 
-\item 
+\item Akronym für \enquote{electronic publication}
+\item offener Standard für E-Books 
+\item International Digital Publishing Forum (IDPF)
+\item ersetzt Open eBook (OEB/OEBPS) Standard
+\item dynamische Anpassung des Textes an Ausgabegerät
+\item kein Gerät implementiert Standard komplett
+\item DRM optional
 \end{itemize}
 
 \end{frame}
 
 \begin{frame}
-\frametitle{Aufbau von ePub-Dateien}
-\framesubtitle{~}
+\frametitle{Was ist eigentlich \enquote{EPUB}?}
+\framesubtitle{Der EPUB Standard}
+
+\textbf{Version 2}
 
 \begin{itemize}
-\item Verschiedene Versionen
-\item 
+\item XML und XHTML,
+\item DTBook, NCX, SVG, CSS,
+\item Dublin Core und Zip,
+\item sowie PNG, JPEG/JFIF, GIF
+\end{itemize}
+
+\textbf{Version 3}
+
+\begin{itemize}
+	\item ohne DTBook
+	\item Medienüberlagerungen ($\Rightarrow$ Hörbuch)
+	\item \enquote{Kanonische Fragmentidentifizierer} $\Rightarrow$ genaue Verweise
+	\item Präsentation: seitenbasiert oder rollbar
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Was ist eigentlich \enquote{EPUB}?}
+\framesubtitle{Aufbau von EPUB-Dateien}
+
+\begin{itemize}
+\item Siehe Beispiel von \url{http://www.inkshard.com/how-to-make-an-ebook-epub-file/}
+\item Validator unter \url{http://validator.idpf.org/}
 \item 
 \item 
 \item 
