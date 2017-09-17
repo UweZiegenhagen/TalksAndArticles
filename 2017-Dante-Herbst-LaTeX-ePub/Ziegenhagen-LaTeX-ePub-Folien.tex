@@ -11,6 +11,28 @@
 \author{Uwe Ziegenhagen}
 \title{EPUBs erzeugen mit LaTeX, lwarp und Calibre}
 
+\usepackage{hyperref}
+\usepackage{hyperxmp}
+\hypersetup{%
+   pdftitle={EPUBs erzeugen mit LaTeX, lwarp und Calibre},
+   pdfauthor={Uwe Ziegenhagen},
+   pdfcopyright={Copyright (C) 2017, Uwe Ziegenhagen. This work is licensed
+under a Creative Commons Attribution-ShareAlike 4.0 International License},
+   pdfsubject={Vortrag auf der Herbsttagung von DANTE e.V.},
+   pdfkeywords={LaTeX,TeX,EPUB,DANTE e.V.},%ggf. anpassen
+   pdflicenseurl={http://creativecommons.org/licenses/by-sa/4.0/},
+   pdfcaptionwriter={},
+   pdfcontactaddress={},
+   pdfcontactcity={Cologne},
+   pdfcontactpostcode={},
+   pdfcontactcountry={Germany},
+   pdfcontactphone={},
+   pdfcontactemail={ziegenhagen@gmail.com},
+   pdfcontacturl={www.uweziegenhagen.de},
+   pdflang={de},
+   pdfmetalang={de},
+}
+
 \begin{document}
 
 \begin{frame}
@@ -70,19 +92,22 @@ EPUB
 
 \end{frame}
 
+\section{Aufbau von EPUB-Dateien}
 
 \begin{frame}
-\frametitle{Was ist eigentlich \enquote{EPUB}?}
-\framesubtitle{Aufbau von EPUB-Dateien}
+\frametitle{Aufbau von EPUB-Dateien}
+\framesubtitle{Zerlegung einer EPUB-Datei}
 
 \begin{itemize}
-\item Siehe Beispiel von \url{http://www.inkshard.com/how-to-make-an-ebook-epub-file/}
-\item Validator unter \url{http://validator.idpf.org/}
-\item 
-\item 
-\item 
-\item 
+\item EPUB-Dateien sind Zip-Archive
+\item lassen sich bequem öffnen und analysieren
+%\item Siehe Beispiel von \url{http://www.inkshard.com/how-to-make-an-ebook-epub-file/}
+%\item Validator unter \url{http://validator.idpf.org/}
+\item Beispiel von \url{https://github.com/IDPF/epub3-samples}
 \end{itemize}
+
+% https://www.edrlab.org/epub/anatomy-of-an-epub-3-file/
+
 \end{frame}
 
 \section{Das \enquote{lwarp}-Paket}
