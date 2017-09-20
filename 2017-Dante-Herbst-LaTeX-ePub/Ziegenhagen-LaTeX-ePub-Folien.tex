@@ -100,13 +100,19 @@ EPUB
 
 \begin{itemize}
 \item EPUB-Dateien sind Zip-Archive
-\item lassen sich bequem öffnen und analysieren
 %\item Siehe Beispiel von \url{http://www.inkshard.com/how-to-make-an-ebook-epub-file/}
 %\item Validator unter \url{http://validator.idpf.org/}
-\item Beispiel von \url{https://github.com/IDPF/epub3-samples}
-\end{itemize}
+\item \url{https://www.edrlab.org/epub/anatomy-of-an-epub-3-file/}
+\item Aufbau:
 
-% https://www.edrlab.org/epub/anatomy-of-an-epub-3-file/
+\begin{description}
+\item [mimetype] ''application/epub+zip''
+\item [META-INF/] container.xml
+\item [content.opf] DC-Informationen
+\item [toc.ncx] Inhaltsverzeichnis
+\item [\ldots] HTML, PNG/JPG, CSS 
+\end{description}
+\end{itemize}
 
 \end{frame}
 
@@ -117,13 +123,11 @@ EPUB
 \framesubtitle{~}
 
 \begin{itemize}
-\item Autor: 
-\item Sehr aktiv in der Entwicklung, seit xx über 40 Versionen
+\item Autor: Brian Dunn, \url{www.bdtech-concepts.com}
+\item Sehr aktiv in der Entwicklung, seit 03/2016 über 40 Versionen
 \item $\Rightarrow$ \TeX-Installation vorher updaten
-\item 
-\item 
-\item 
 \end{itemize}
+
 \end{frame}
 
 \begin{frame}
