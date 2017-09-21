@@ -8,6 +8,8 @@
 \usepackage{csquotes}
 \usepackage{xcolor}
 
+%\usetheme{AnnArbor}
+
 \author{Uwe Ziegenhagen}
 \title{EPUBs erzeugen mit LaTeX, lwarp und Calibre}
 
@@ -18,7 +20,7 @@
    pdfauthor={Uwe Ziegenhagen},
    pdfcopyright={Copyright (C) 2017, Uwe Ziegenhagen. This work is licensed
 under a Creative Commons Attribution-ShareAlike 4.0 International License},
-   pdfsubject={Vortrag auf der Herbsttagung von DANTE e.V.},
+   pdfsubject={Vortrag auf der Herbsttagung 2017 von DANTE e.V.},
    pdfkeywords={LaTeX,TeX,EPUB,DANTE e.V.},%ggf. anpassen
    pdflicenseurl={http://creativecommons.org/licenses/by-sa/4.0/},
    pdfcaptionwriter={},
@@ -54,16 +56,22 @@ under a Creative Commons Attribution-ShareAlike 4.0 International License},
 \frametitle{Was ist eigentlich \enquote{EPUB}?}
 \framesubtitle{Einführung}
 
-EPUB
+Formate:
 
 \begin{itemize}
-\item Akronym für \enquote{electronic publication}
+	\item MOBI
+	\item EPUB
+\end{itemize}
+
+EPUB:
+
+\begin{itemize}
+\item Akronym für \enquote{\textbf{e}lectronic \textbf{pub}lication}
 \item offener Standard für E-Books 
 \item International Digital Publishing Forum (IDPF)
 \item ersetzt Open eBook (OEB/OEBPS) Standard
 \item dynamische Anpassung des Textes an Ausgabegerät
 \item kein Gerät implementiert Standard komplett
-\item DRM optional
 \end{itemize}
 
 \end{frame}
@@ -173,29 +181,28 @@ EPUB
 \includegraphics[width=\textwidth]{lwarp-manual-example/bild-03.png}
 \end{center}
 
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Fix der Formeln}
-\framesubtitle{~}
-
 \begin{itemize}
-\item zwei Möglichkeiten:
-
-\begin{itemize}
-	\item SVG
-	\item PNG
+	\item Formeln fehlen
+	\item Standard SVG $\Rightarrow$ \texttt{lwarpmk limages}
+	\item Alternative Mathjax $\Rightarrow$ Paket-Option
 \end{itemize}
 
-\item 
-\item 
-\item 
-\item 
-\item 
-\end{itemize}
 \end{frame}
 
+\section{Umwandlung nach EPUB}
+
+\begin{frame}[fragile]
+\frametitle{Umwandlung nach EPUB}
+\framesubtitle{Anpassungen für EPUB}
+
+\begin{itemize}
+\item \verb|\booltrue{FormatEPUB}| in die Präambel
+\item passt Kopf- und Fußzeilen sowie die Navigation an
+\item sammelt die Fußnoten ein
+\item danach \texttt{lwarpmk clean}
+\item danach \texttt{lwarpmk html}
+\end{itemize}
+\end{frame}
 
 
 \begin{frame}
