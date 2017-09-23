@@ -12,6 +12,7 @@
 
 \author{Uwe Ziegenhagen}
 \title{EPUBs erzeugen mit LaTeX, lwarp und Calibre}
+\subtitle{\url{github.com/UweZiegenhagen/TalksAndArticles}}
 
 \usepackage{hyperref}
 \usepackage{hyperxmp}
@@ -133,7 +134,9 @@ EPUB:
 \begin{itemize}
 \item Autor: Brian Dunn, \url{www.bdtech-concepts.com}
 \item Sehr aktiv in der Entwicklung, seit 03/2016 über 40 Versionen
-\item $\Rightarrow$ \TeX-Installation vorher updaten
+\item $\Rightarrow$ \TeX-Installation unbedingt vorher updaten
+\item über 550 Seiten Dokumentation
+\item  knapp 100 Seiten Nutzer-Doku
 \end{itemize}
 
 \end{frame}
@@ -159,7 +162,7 @@ EPUB:
 \frametitle{Ergebnisse von \texttt{lwarpmk html}}
 
 \begin{center}
-\includegraphics[width=0.8\textwidth]{lwarp-manual-example/bild-01.png}
+\fbox{\includegraphics[width=0.8\textwidth]{lwarp-manual-example/bild-01.png}}
 \end{center}
 
 \end{frame}
@@ -168,7 +171,7 @@ EPUB:
 \frametitle{Ergebnisse von \texttt{lwarpmk html}}
 
 \begin{center}
-\includegraphics[width=0.8\textwidth]{lwarp-manual-example/bild-02.png}
+\fbox{\includegraphics[width=0.8\textwidth]{lwarp-manual-example/bild-02.png}}
 \end{center}
 
 \end{frame}
@@ -178,7 +181,7 @@ EPUB:
 \frametitle{Ergebnisse von \texttt{lwarpmk html}}
 
 \begin{center}
-\includegraphics[width=\textwidth]{lwarp-manual-example/bild-03.png}
+\fbox{\includegraphics[width=\textwidth]{lwarp-manual-example/bild-03.png}}
 \end{center}
 
 \begin{itemize}
@@ -210,13 +213,24 @@ EPUB:
 \framesubtitle{Was ist Calibre?}
 
 \begin{itemize}
-\item Kovid Goyal, seit 2006
-\item \enquote{Eierlegende Wollmilchsau} der EBook-Verwalter
+\item Entwickler Kovid Goyal, seit 2006
+\item \enquote{Eierlegende Wollmilchsau} der eBook-Verwalter
+\item Verfügbar für alle gängigen Betriebssysteme
 \item Katalogisierung und Verwaltung von elektronischen Büchern
 \item Pflege von Metadaten
-\item Verfügbar für alle gängigen Betriebssysteme
 \end{itemize}
 \end{frame}
+
+\begin{frame}
+\frametitle{Calibre}
+\framesubtitle{GUI}
+
+\begin{center}
+\fbox{\includegraphics[width=\textwidth]{lwarp-manual-example/calibre-000.png}}
+\end{center}
+
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Calibre}
@@ -251,6 +265,44 @@ EPUB:
 
 
 
+\begin{frame}
+\frametitle{Eigenes Beispiel}
+\framesubtitle{~}
+
+\begin{itemize}
+\item Bereinigung des Codes
+\item KOMA-Klassen gehen nicht
+\item \texttt{HomeHTMLFilename} and \texttt{HTMLFilename} gesetzt
+\item Mit Blindtext gefüllt
+\item Umwandlung mittels \texttt{lwarpmk html}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Calibre}
+\framesubtitle{Umwandlung}
+
+\begin{itemize}
+\item Hinzufügen eines Buches
+\item Umwandlung und Export als EPUB
+\item Ergebnisse:
+\begin{itemize}
+	\item Formeln nur unter iOS und Calibre Viewer
+	\item Sumatra zeigt sie nicht
+	\item werden aber nicht skaliert/gefärbt
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Fazit}
+\framesubtitle{~}
+
+\begin{itemize}
+\item praktikabelste Möglichkeit, mit \LaTeX\ EPUBs zu erzeugen
+\item Empfehlung: Testen am Anfang des Projekts
+\end{itemize}
+\end{frame}
 
 
 \end{document}
