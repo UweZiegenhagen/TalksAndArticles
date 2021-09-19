@@ -1,0 +1,14 @@
+\documentclass[a3paper]{article}
+\usepackage[left=2cm,top=2cm,bottom=1cm, right=1cm]{geometry}
+\usepackage{tikz}
+
+\begin{document}
+\begin{tikzpicture}
+\foreach \i in {0,...,-17}{%
+  \draw[very thick](0,\i*2)-- (5,\i*2);
+    \foreach \j in {0,...,30}{%
+	  \draw[very thick](\j/1.5+6,\i*2) circle (9.5pt);
+	}
+}
+\end{tikzpicture}
+\end{document}
